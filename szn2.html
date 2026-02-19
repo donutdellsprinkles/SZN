@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <link rel="icon" type="image/x-icon" href="szn.jpg">
+    </head>
+    <body>
+        <img src="test.jpg"  style="width: 75%; display: block;
+                 margin-left: auto;
+                 margin-right: auto;"">
+                 <h3>Sex with emran, its not like the first time we ever had sex matter of fact I look beyond our sex. Our sex made us grow like a tree in a way our sex pushes us further and further .1 <button class="playPauseButton" data-audio-id="audioPlayer1"><h3>▶︎</h3></button></h3>
+                 <audio id="audioPlayer1" src="emran.mp3"></audio>
+                  <img src="wall.jpg"  style="width: 75%; display: block;
+                 margin-left: auto;
+                 margin-right: auto;"">
+                 <h3>I am a brick in a falling wall but who cares? I am enjoying my moment with mody for whats life truly like without a brother to look out and feel for you. I love you bro. .2 <button class="playPauseButton" data-audio-id="audioPlayer2"><h3>▶︎</h3></button></h3>
+                 <audio id="audioPlayer2" src="mody.mp3"></audio>
+                 <img src="brain.jpg"  style="width: 75%; display: block;
+                 margin-left: auto;
+                 margin-right: auto;"">
+                 <br><br><br>
+                 <h3> We humans are often jealous of each other for things we can't control but we can't truly acknowledge our love for each other cause love can't be the same for each person, I love you like I love myself and thats a looooooooooottttttttttt. Love yourself so that others can love you .3</h3>
+    </body>
+    <style>
+        h3 {
+            font-family: type;
+            font-weight: 50;
+        }
+        body {
+            background-color: #fcf5e3;
+            padding-left: 20%;
+                padding-right: 20%;
+        }
+        button {
+            background-color: transparent;
+            outline:cyan;
+            cursor: pointer;
+            border:dotted;
+        }
+        @font-face {
+    font-family: type;
+    src: url(type.ttf)
+}
+    </style>
+    <script>
+        const playPauseButtons = document.querySelectorAll('.playPauseButton');
+      
+      playPauseButtons.forEach(button => {
+        const audioId = button.getAttribute('data-audio-id');
+        const audioPlayer = document.getElementById(audioId);
+    
+        button.addEventListener('click', () => {
+          if (audioPlayer.paused) {
+            audioPlayer.play();
+            button.textContent = '▐▐';
+            button.style.height = "60px"
+          } else {
+            audioPlayer.pause();
+            button.textContent = '▶︎';
+            button.style.height = "60px"
+            
+          }
+        });
+      });
+    </script>
+</html>
